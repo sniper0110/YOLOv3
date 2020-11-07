@@ -1,3 +1,6 @@
+# Disclaimer!!
+The code in this repository has been copied from the original repo : https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3 with minor modifications. I chose to not fork the original repo because it contained many things that I didn't want to use. I also made some modifications based on some issues that were reported by other developers.
+
 ## [TensorFlow2.x-YOLOv3](https://yunyang1994.github.io/posts/YOLOv3/#more)
 --------------------
 A minimal tensorflow implementation of YOLOv3, with support for training, inference and evaluation.

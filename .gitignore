@@ -1,0 +1,8 @@
+data/
+docs/
+results/
+__pycache__/
+TensorFlow2.0-Examples/
+yolov3.data-00000-of-00001
+yolov3.index
+yolov3.weights

@@ -1,0 +1,7 @@
+numpy
+pillow
+scipy
+wget
+seaborn
+easydict
+grpcio

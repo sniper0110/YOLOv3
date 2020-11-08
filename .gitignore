@@ -1,7 +1,7 @@
-data/
 results/
 __pycache__/
 TensorFlow2.0-Examples/
 yolov3.data-00000-of-00001
 yolov3.index
 yolov3.weights
+data/log/events.out.tfevents.1604756561.nourislam-GL63-8RD.202114.5405.v2

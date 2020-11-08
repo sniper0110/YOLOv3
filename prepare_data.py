@@ -17,21 +17,6 @@ def parse_my_csv(path_to_csv_file):
         xmax = int(df.iloc[i]['xmax'])
         ymax = int(df.iloc[i]['ymax'])
 
-        '''
-        # Computing the data that corresponds to YOLO representation
-        xc = int((int(df.iloc[i]['xmax']) + int(df.iloc[i]['xmin'])) / 2)
-        yc = int((int(df.iloc[i]['ymax']) + int(df.iloc[i]['ymin'])) / 2)
-        w = int(df.iloc[i]['xmax']) - int(df.iloc[i]['xmin'])
-        h = int(df.iloc[i]['ymax']) - int(df.iloc[i]['ymin'])
-
-        # Normalizing
-        
-        xc = xc / int(df.iloc[i]['width'])
-        yc = yc / int(df.iloc[i]['height'])
-        w  = w  / int(df.iloc[i]['width'])
-        h  = h  / int(df.iloc[i]['height'])
-        '''
-
         if df.iloc[i]['class'] == 'mask':
             object_class = 0
         else:

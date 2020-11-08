@@ -61,10 +61,6 @@ def modify_data(data, path_to_images, path_to_output):
 
 
 
-
-
-
-
 if __name__=='__main__':
 
     parser = argparse.ArgumentParser()
@@ -74,16 +70,15 @@ if __name__=='__main__':
 
     args = parser.parse_args()
 
-    #path_to_data = '/media/nourislam/Data/Datasets/Mask_Wearing_v4_raw_tensorflow/train_to_modify/'
-    path_to_images = args.path_to_images #path_to_data
-    path_csv_file = args.path_to_csv_annotations #os.path.join(path_to_data, '_annotations.csv')
+    path_to_images = args.path_to_images 
+    path_csv_file = args.path_to_csv_annotations 
 
     data = parse_my_csv(path_csv_file)
 
-    output_path = args.path_to_save_output #os.path.join(path_to_data, 'output')
+    output_path = args.path_to_save_output 
     if not os.path.isdir(output_path):
         os.makedirs(output_path)
 
     modify_data(data, path_to_images, output_path)
-    #modify_data(df, path_to_images)
+
 

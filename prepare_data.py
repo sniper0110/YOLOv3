@@ -6,6 +6,14 @@ import shutil
 import argparse
 
 def parse_my_csv(path_to_csv_file):
+    """
+    This function reads all the annotations from the csv file and then create a dictionary
+    that stores these annotations.
+    The dictionary will have as a key the name of the image and as a value a list of detections.
+
+    params:
+    path_to_csv_file : the path to where your pascal annotations (should be a csv file).
+    """
 
     df = pd.read_csv(path_to_csv_file)
     data = {}
@@ -34,6 +42,19 @@ def parse_my_csv(path_to_csv_file):
 
 
 def modify_data(data, path_to_images, path_to_output):
+    """
+    This function transforms annotations from pascal format to yolo format.
+    It also removes any spaces in the images names and create new images that
+    have names without spaces. This is done to make things consistent with 
+    the way the training and evaluation code handle reading data.
+
+    params:
+    data: a dictionary that has as a key the name of the image and as value a list of 
+    detections (xmin, ymin, xmax, ymax, class).
+    path_to_images: the path to where your images are stored.
+    path_to_output : the path to where the generated yolo annotations and also the images
+    without any spaces in their names.
+    """
 
     path_to_save_annotations = os.path.join(path_to_output, 'annotations.txt')
     with open(path_to_save_annotations, 'a+') as f:

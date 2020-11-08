@@ -68,15 +68,5 @@ $ tensorboard --logdir ./data/log
     </a>
 </p>
 
-## Citation
---------------------
-```
-@Github_Project{TensorFlow2.0-Examples,
-  author       = YunYang1994,
-  email        = www.dreameryangyun@sjtu.edu.cn,
-  title        = "YOLOv3: An Incremental Improvement",
-  url          = https://github.com/YunYang1994/TensorFlow2.0-Examples,
-  year         = 2019,
-}
-```
+
 

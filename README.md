@@ -14,19 +14,6 @@ $ pip3 install -r ./docs/requirements.txt
 $ wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
-## Quick start
---------------------
-In this part, we will use pretrained weights to make predictions on both image and video.
-
-```
-$ python image_demo.py
-```
-
-<p align="center">
-    <img width="100%" src="https://user-images.githubusercontent.com/30433053/68088581-9255e700-fe9b-11e9-8672-2672ab398abe.jpg" style="max-width:100%;">
-    </a>
-</p>
-
 ## Train yymnist
 --------------------
 

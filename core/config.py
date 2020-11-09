@@ -43,7 +43,6 @@ __C.TRAIN.WARMUP_EPOCHS       = 2
 __C.TRAIN.EPOCHS              = 100
 
 
-
 # TEST options
 __C.TEST                      = edict()
 

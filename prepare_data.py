@@ -37,6 +37,8 @@ def parse_my_csv(path_to_csv_file):
             data.update({df.iloc[i]['filename'] : [[xmin, ymin, xmax, ymax, object_class]]})
 
 
+    # data = {'image_name' : [[det1], [det2], ..]}
+    # det1 = xmin, ymin, xmax, ymax, object_class
     return data
 
 

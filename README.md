@@ -11,7 +11,6 @@ Install requirements and download pretrained weights
 
 ```
 $ pip3 install -r ./docs/requirements.txt
-$ wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
 ## Train yymnist
